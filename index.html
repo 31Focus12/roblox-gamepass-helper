@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ROBLOX Gamepass Helper</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="grid">
+      <div>
+        <div class="header-top">
+          <div>
+            <h1>ROBLOX Gamepass Helper</h1>
+            <p>Bundles • Items • Gamepass — quick ID navigation & commission calculator</p>
+          </div>
+          <div class="fee-display">
+            <div class="commission">30%</div>
+          </div>
+        </div>
+
+        <div class="mode-buttons" >
+          <button id="btnBundles" class="mode-bundles">Bundles</button>
+          <button id="btnItems" class="mode-items active">Items</button>
+          <button id="btnGamepass" class="mode-gamepass">Gamepass</button>
+        </div>
+
+        <div class="input-section">
+          <label for="inputId" class="input-label">Enter item ID</label>
+          <div class="input-row">
+            <input type="text" id="inputId" placeholder="Example: 12345678" />
+            <button id="btnOpen" class="btn-open">Open ↗</button>
+          </div>
+          <div id="linkPreview" class="link-preview">Preview link: —</div>
+        </div>
+
+        <div class="btn-group">
+          <button id="btnCopy" class="btn-copy">Copy Link</button>
+          <button id="btnReset" class="btn-reset">Reset</button>
+        </div>
+      </div>
+
+      <div>
+        <div class="commission-calculator">
+          <h2>Commission Calculator</h2>
+          <p>Enter an amount to see how much you'll receive after a 30% fee.</p>
+
+          <div class="field-row">
+            <label for="inputGross">Gross Amount</label>
+            <input type="number" id="inputGross" value="100" min="0" />
+          </div>
+
+          <div class="field-row">
+            <label>Net Received</label>
+            <div id="netReceived" class="value">70 Robux</div>
+          </div>
+
+          <hr />
+
+          <div class="field-row">
+            <label for="inputDesiredNet">Desired Net</label>
+            <input type="number" id="inputDesiredNet" value="100" min="0" />
+          </div>
+
+          <div class="field-row">
+            <label>Required Gross</label>
+            <div id="requiredGross" class="value">142 Robux</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>by @focusthemaid</div>
+      <div class="footer-info">
+        <div>Made with HTML/CSS/JS</div>
+        <div class="version">v1.2</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
