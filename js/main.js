@@ -106,7 +106,11 @@
   inputGross.addEventListener('input', updateCommission);
   inputDesiredNet.addEventListener('input', updateCommission);
 
+  document.addEventListener('contextmenu', e => e.preventDefault());
+  document.addEventListener('dragstart', e => e.preventDefault());
+
   updateModeButtons();
   updatePreview();
   updateCommission();
 })();
+
